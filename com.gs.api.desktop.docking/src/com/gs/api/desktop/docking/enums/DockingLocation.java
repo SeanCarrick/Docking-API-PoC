@@ -16,9 +16,9 @@
  * 
  * *****************************************************************************
  *  Project    :   com.gs.api.desktop.docking
- *  Class      :   Dockable.java
+ *  Class      :   DockingLocation.java
  *  Author     :   Sean Carrick
- *  Created    :   Dec 8, 2021 @ 9:35:04 AM
+ *  Created    :   Dec 8, 2021 @ 9:35:52 AM
  *  Modified   :   Dec 8, 2021
  *  
  *  Purpose:
@@ -31,23 +31,18 @@
  * *****************************************************************************
  */
 
-package com.gs.api.desktop.docking;
-
-import com.gs.api.desktop.docking.enums.DockingLocation;
+package com.gs.api.desktop.docking.enums;
 
 /**
  *
  * @author Sean Carrick &lt;sean at gs-unitedlabs dot com&gt;
- * 
+ *
  * @version 1.0
  * @since 1.0
  */
-public interface Dockable {
-    public String getTitle();
-    
-    public javax.swing.JPanel getContentPane();
-    
-    public default DockingLocation getDockingLocation() {
-        return DockingLocation.EDITOR;
-    }
+public enum DockingLocation {
+    EDITOR,
+    NAVIGATOR,
+    OUTPUT,
+    PROPERTIES
 }

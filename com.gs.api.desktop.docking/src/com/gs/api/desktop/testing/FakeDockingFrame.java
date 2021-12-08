@@ -172,9 +172,6 @@ public class FakeDockingFrame extends javax.swing.JFrame {
         editor.add(label);
         editor.setOpaque(false);
         editorPane.add(editor);
-        editorPane.setTabComponentAt(editorPane.indexOfComponent(editor), 
-                Dockable.getTitlePanel(editorPane, editor, "Editor Window " 
-                        + editorCount, false));
         
     }//GEN-LAST:event_newEditorMenuItemActionPerformed
 
